@@ -37,11 +37,12 @@ img.card {
 #main-2.flex-box {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 #main-2 h2{
   margin: 1rem 0;
+
 }
 
 .nav-brand{
