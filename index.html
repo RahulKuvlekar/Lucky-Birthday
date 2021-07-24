@@ -14,6 +14,64 @@
     <script src="./Assets/Script/app.js" defer></script>
   </head>
   <body>
-    <main></main>
+    <main id="main-1" class="flex-box fluid-container">
+      <nav class="navbar card">
+        <h1 class="nav-brand">Is Your <span> Birthday Lucky ?</span></h1>
+        <a href="#main-2">Lets Check <i class="fas fa-caret-square-down"></i></a>
+      </nav>
+    </main>
+    <main id="main-2" class="flex-box">
+      <section>
+        <div class="fluid-container card">
+          <h4 id="privacy-notice" class="card">
+            Privacy Notice :: We are not storing your data. ❌
+          </h4>
+          <h2>Enter Your Birthdate and lucky number to continue...</h2>
+          <div id="input-section">
+            <h3>Select your Birth date:</h3>
+            <input type="date" name="" id="input-date" />
+            <h3>Enter your Lucky Number:</h3>
+            <input type="number" name="" id="input-number" />
+            <button id="checkBtn" class="btn-alternate">Check</button>
+          </div>
+          <span id="errorMsg" class="notVisible">Please Check the Inputs</span>
+          <div id="output-section" class="notVisible card">
+            <h2>MSG</h2>
+            <img src="" alt="Image" />
+            <!-- <img src="https://media.giphy.com/media/MarYoZ2BIJUimKydXa/giphy.gif" alt="> -->
+            <!-- <img src="https://media.giphy.com/media/jJQC2puVZpTMO4vUs0/giphy.gif" alt=""> -->
+          </div>
+          <div class="footer card">
+            <h3 class="footer-brand">Social Media Handles</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="https://github.com/RahulKuvlekar" target="_blank"
+                  ><i class="fab fa-github-square fa-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/RahulKuvlekar" target="_blank"
+                  ><i class="fab fa-twitter-square fa-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rahulkuvlekar"
+                  target="_blank"
+                  ><i class="fab fa-linkedin fa-2x"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/rahul_kuvlekar_/"
+                  target="_blank"
+                  ><i class="fab fa-instagram-square fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
