@@ -41,6 +41,10 @@ const isLuckyBday = (no, yr, mn, dt) => {
 };
 
 checkBtn.addEventListener("click", () => {
+  notVisible(errorMsg);
+  outputSection.querySelector("h2").textContent =""
+  notVisible(outputSection);
+
   const inputDate = document.getElementById("input-date").value;
   const inputNumber = document.getElementById("input-number").value;
 
@@ -56,6 +60,6 @@ checkBtn.addEventListener("click", () => {
 
   const ans = isLuckyBday(inputNumber, ...inputDate.split("-"));
 
-  outputSection.querySelector("h2").textContent = ans;
   makeVisible(outputSection);
+  outputSection.querySelector("h2").textContent = ans;
 });
